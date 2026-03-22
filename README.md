@@ -1,54 +1,54 @@
-Here’s your **README snippet updated with emojis** to make it more visually appealing and engaging for GitHub:
+# 🧮 C++ Calculator Project
 
----
+A clean, OOP-based command-line calculator in C++ with basic and advanced operations. Built using class, header files, and `<cmath>` library.
 
-# 🖥️ C++ Calculator Project
+## ✨ Features
+- Addition, Subtraction, Multiplication, Division (with zero check)
+- Modulus, Power, Square Root (with negative number protection)
+- Menu-driven interface
+- Proper error messages
+- Fully separated header + implementation
 
-A simple console-based calculator implemented in C++ using a class-based approach. Supports basic arithmetic operations, modulus, power, and square root with input validation (e.g., division by zero, square root of negative numbers).
+## 📁 Project Structure
+-calculator.cpp
+-calculator.exe
+-calculator.h
+-main.cpp
 
----
+## 📥 Source Files
 
-## 📂 Project Structure
+- **[📥 calculator.h](calculator.h)** – Header file with class declaration, private variables, public function prototypes, and header guards.
+- **[📥 calculator.cpp](calculator.cpp)** – Implementation file containing all member functions (setValues, addition, subtraction, multiplication, division, modulus, power, squareroot) with logic and error handling.
+- **[📥 main.cpp](main.cpp)** – Main program file with user input, menu display, switch-case logic, and object creation.
 
-| Filename         | Description                                                                                                                                                                            |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `calculator.h`   | Header file containing the `Calculator` class declaration (private members, public methods, and include guards). 📄                                                                    |
-| `calculator.cpp` | Implementation file for the `Calculator` class (method definitions for `setValues`, `addition`, `subtraction`, `multiplication`, `division`, `modulus`, `power`, and `squareRoot`). ⚙️ |
-| `main.cpp`       | Main program file with user interface: input for two numbers, menu-driven operation selection (switch-case), and result display. 🖱️                                                   |
-
----
-
-## 🚀 Features
-
-* **Operations** (menu choices 1–7):
-
-  1. Addition ➕
-  2. Subtraction ➖
-  3. Multiplication ✖️
-  4. Division ➗ (checks for division by zero)
-  5. Modulus (%) using `fmod` 🧮
-  6. Power (using `pow`) 🔺
-  7. Square Root (of first number only; checks for negative input) √
-* Error handling with clear console messages ⚠️
-* Uses `float` for calculations 🔢
-* Clean, object-oriented design with separate header/implementation files 🧩
-
----
-
-## 💻 How to Compile & Run
-
-### Prerequisites
-
-* Any C++ compiler (g++, Visual Studio, etc.) 💻
-* Required headers: `<iostream>`, `<cmath>` 📚
-
-### Compilation (using g++)
+## 🛠️ How to Compile & Run
+(Works on VS Code, Visual Studio, MinGW, Linux, macOS)
 
 ```bash
-g++ -o calculator main.cpp calculator.cpp  # Compile and link
-./calculator                             # Run on Linux / macOS
-calculator.exe                           # Run on Windows
-```
+g++ calculator.cpp main.cpp -o calculator
+./calculator
 
----
+ENTER FIRST NUMBER : 25
+ENTER SECOND NUMBER : 4
 
+1. ADDITION
+2. SUBTRACTION
+3. MULTIPLICATION
+4. DIVISION
+5. MODULUS
+6. POWER
+7. SQUAREROOT
+
+ENTER THE CHOICE : 6
+
+RESULT OF POWER : 390625
+
+🔧 Technologies Used
+
+C++11
+<iostream> & <cmath>
+Object-Oriented Programming
+
+
+Made with ❤️ for learning C++
+Feel free to fork or use it as a base for your projects!
