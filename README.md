@@ -52,5 +52,3 @@ calculator.exe                           # Run on Windows
 
 ---
 
-
-Do you want me to do that next?
